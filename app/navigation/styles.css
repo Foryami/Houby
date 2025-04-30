@@ -1,0 +1,25 @@
+/* Skrytí výchozího posuvníku */
+.shadow-scroll {
+  overflow-y: auto;
+  max-height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.1);
+
+  /* Skrytí klasického posuvníku ve všech prohlížečích */
+  -ms-overflow-style: none; /* Pro Internet Explorer a Edge */
+  scrollbar-width: none; /* Pro Firefox */
+}
+
+.shadow-scroll::-webkit-scrollbar {
+  width: 8px; /* Nastavení šířky pro Webkit prohlížeče (Chrome, Safari) */
+  display: block; /* Ujistěte se, že posuvník je zobrazen */
+}
+
+.shadow-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.shadow-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
