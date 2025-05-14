@@ -4,7 +4,7 @@ import Page2 from "./page2";
 import Uvod from "../uvod/page";
 
 export const metadata: Metadata = {
-  title: "Home title",
+  title: "Mykologický kroužek",
   description: "Home popis",
 };
 
